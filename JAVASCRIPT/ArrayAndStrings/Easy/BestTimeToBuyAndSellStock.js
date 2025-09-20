@@ -1,8 +1,4 @@
-/**
- * Function to calculate the maximum profit from buying and selling a stock.
- * @param {number[]} prices - Array of stock prices where prices[i] is the price of a given stock on the i-th day.
- * @return {number} - Maximum profit that can be achieved. If no profit is possible, return 0.
- */
+// BEST TIME TO AND SELL STOCK
 function maxProfit(prices) {
     let minPrice = Infinity;
     let maxProfit = 0;

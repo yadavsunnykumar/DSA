@@ -1,0 +1,23 @@
+// Longest Substring Without Repeating Characters
+var lengthOfLongestSubstring = function(s) {
+    let set = new Set();
+    let left = 0, maxLength = 0;
+
+    for(let right = 0; right<s.length;right++){
+        while(set.has(s[right])){
+            set.delete(s[left]);
+            left++;
+        }
+        set.add(s[right]);
+        maxLength = Math.max(maxLength,right-left+1);
+
+
+    }
+    return maxLength;
+};
+// Example 1:
+let s = "abcabcbb";
+console.log(lengthOfLongestSubstring(s)); // Output: 3
+// Example 2:
+s = "bbbbb";
+console.log(lengthOfLongestSubstring(s)); // Output: 1

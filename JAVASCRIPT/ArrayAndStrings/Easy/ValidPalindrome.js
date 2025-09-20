@@ -1,3 +1,4 @@
+// VALID PALINDROME
 function validPalindrome(str){
     str = str.toLowerCase().replace(/[^a-z0-9]/g, '');
     let left = 0;

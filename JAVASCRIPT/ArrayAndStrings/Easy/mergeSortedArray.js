@@ -1,3 +1,4 @@
+// MERGE SORTED ARRAYS
 function mergeSortedArray(arr1, arr2){
     let mergedArray = [];
     let i =0, j=0;

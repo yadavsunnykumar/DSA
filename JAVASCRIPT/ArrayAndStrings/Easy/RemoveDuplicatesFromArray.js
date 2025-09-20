@@ -1,3 +1,4 @@
+// REMOVE DUPLICATES
 function removeDuplicate(arr){
     let set = new Set()
     for(let num of arr){
